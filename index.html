@@ -75,23 +75,23 @@
         <div class="illustration">
             <img src="3d character 2.png" alt="">
         </div>
-        <div class="form">
+        <form class="form" name="submit-to-google-sheet">
             <div>
-                <input type="text" placeholder="Enter Your name" id="name">
+                <input type="text" placeholder="Enter Your name" id="name" name="Name">
             </div>
             <div>
-                <input type="email" placeholder="Enter Your email" id="email">
+                <input type="email" placeholder="Enter Your email" id="email" name="Email">
             </div>
             <div>
-                <input type="tel" placeholder="Enter Your number" id="phone">
+                <input type="tel" placeholder="Enter Your number" id="phone" name="Phone">
             </div>
             <div>
-                <textarea name="" id="" cols="20" rows="8" itemid="message" placeholder="Describe your work here.."></textarea>
+                <textarea name="Message" cols="20" rows="8" itemid="message" placeholder="Describe your work here.."></textarea>
             </div>
             <div>
                 <button type="submit" class="submit">Submit</button>
             </div>
-        </div> 
+        </form> 
     </div>
     <footer>
         <h3>&copy; 2024 SocialVac | All rights reserved</h3>
@@ -104,5 +104,17 @@
             <h3>📞 18107353899</h3>
         </div>
     </footer>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbykVRfsg9FTqXoTd5DzKRxvuSOuqxxpOIoMCP5nDJ0zS02wGw1fXXQbMtuciW8rdRjS/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
