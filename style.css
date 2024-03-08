@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #000714;
+}
+nav{
+    width: 100%;
+    height: 130px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navwrap{
+    width: 95%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.288) 0%, rgba(255, 255, 255, 0.171) 51%, rgba(0, 0, 0, 0.267) 100%);
+    border-radius: 15px;
+    backdrop-filter: blur( 20px );
+    border: 1px solid rgba(90, 90, 90, 0.404);
+    padding: 10px;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.imgLogo{
+    width: 80%;
+}
+.midnav{
+    width: 32%;
+}
+.midnav a{
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    font-size: 1.2vw;
+}
+.midnav a:hover{
+    text-shadow: 1px 1px 10px white;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.bookcall button{
+    width: 8vw;
+    padding: 10px;
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    border: 1px solid rgb(255, 255, 255);
+    color: #ffff;
+    font-size: 1vw;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: 0.3s ease all;
+}
+.bookcall button:hover{
+    border: 1px solid rgb(255, 255, 255);
+    color: #000818;
+    font-size: 1vw;
+    border-radius: 10px;
+    background-color: #ffff;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 1px 1px 10px white;
+}
+.viewpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
+}
+.copy{
+    width: 55%;
+    height: 50%;
+
+    /* width: 50%; */ /* Adjusted width */
+    /* max-width: 900px; */ /* Added max-width */
+    /* height: auto; */ /* Adjusted height */
+}
+.copy h1{
+    color: white;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2.6vw;
+}
+.copy h3{
+    color: white;
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top: 10px;
+}
+.vac{
+    font-weight: 800;
+    font-style: italic;
+    color: #1196ee;
+}
+.funnelimg{
+    width: 20%;
+    max-width: 200px;
+    transform: rotate(-10deg);
+    animation: moving 5s ease infinite alternate;
+}
+.fanimg{
+    width: 18%;
+    max-width: 180px;
+    transform: rotate(10deg);
+    animation: moving 3s ease infinite alternate;
+}
+
+@keyframes moving {
+    from{
+        transform: translateX(20);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.h1
+{
+    color: white;
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2.7vw;
+}
+.strategy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000714;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+.box{
+   background: linear-gradient(180deg, rgba(1,22,63,1) 0%, rgba(6,61,171,1) 100%);
+   width: 350px;
+   height: 300px;
+   margin: 15px;
+   border-radius: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 15px;
+}
+.box img{
+    width: 60%;
+}
+.box h2{
+    color: white;
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1rem;
+}
+.contactform{
+    width: 100%;
+    min-height: 70vh;
+    background-color: #063491;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.illustration img{
+    width: 20vw;
+}
+.form{
+    width: 50%;
+    padding: 1rem;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form input{
+    width: 100%;
+    margin: 5px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #000818;
+    color: white;
+}
+input::placeholder{
+    color: rgb(255, 255, 255);
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+}
+.form textarea{
+    width: 100%;
+    margin: 5px;
+    background-color: #000818;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+}
+textarea::placeholder{
+    color: white;
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    margin: 5px;
+    color: #ffffff;
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+button:hover{
+    color: #000818;
+    font-weight: 700;
+    background-color: white;
+    box-shadow: 3px 3px #000818;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.links{
+    text-decoration: none;
+}
+i{
+    color: white;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.socials h3{
+    color: white;
+    font-weight: 100;
+    font-size: 1rem;
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+}
+footer h3{
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-size: 1rem;
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+@media (max-width:900px) {
+    /* .bookcall{
+        display: none;
+    } */
+    .midnav{
+        display: none;
+    }
+    .logo{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .imgLogo{
+        width: 100%;
+    }
+    .navwrap{
+        justify-content: center;
+        gap: 80px;
+    }
+    .copy{
+        /* width: 55%;
+        height: 50%; */
+    
+        width: 90%; /* Adjusted width */
+        max-width: 600px; /* Added max-width */
+        height: auto; /* Adjusted height */
+    }
+    footer h3, i{
+        font-size: 5px;
+     }
+     .bookcall button{
+        width: 6rem;
+        padding: 10px;
+        font-family: "Exo", sans-serif;
+        font-weight: 400;
+        border: 1px solid rgb(255, 255, 255);
+        color: #ffff;
+        font-size: 0.6rem;
+        border-radius: 10px;
+        background-color: transparent;
+        transition: 0.3s ease all;
+    }
+    .bookcall button:hover{
+        border: 1px solid rgb(255, 255, 255);
+        color: #000818;
+        font-size: 0.5rem;
+        border-radius: 10px;
+        background-color: #ffff;
+        cursor: pointer;
+        font-weight: 700;
+        box-shadow: 1px 1px 10px white;
+    }
+     .h1
+{
+    color: white;
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4vw;
+}
+}
+
+@media (max-width: 1300px) {
+    footer h3, i{
+       font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 850px) {
+    body {
+      font-size: 14px;
+    }
+    .copy h1 {
+      font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+    footer h3, i{
+        font-size: 7px;
+        font-weight: 100;
+     }
+     .socials{
+        gap: 10px;
+        align-items: center;
+    }
+    .contacts{
+        gap: 10px;
+        align-items: center;
+    }
+    .copy{
+        width: 70%;
+        height: 50%;
+    }
+    .copy h1{
+        color: white;
+        font-family: "Exo", sans-serif;
+        font-weight: 500;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 5vw;
+    }
+    .copy h3{
+        color: white;
+        font-family: "Exo", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2vw;
+        margin-top: 10px;
+    }
+    .contactform{
+        width: 100%;
+        min-height: 70vh;
+        background-color: #063491;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .form{
+        width: 80%;
+        padding: 1rem;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .h1
+{
+    color: white;
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 5vw;
+}
+.box h2{
+    color: white;
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.bookcall button{
+    width: 5.5rem;
+    padding: 10px;
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    border: 1px solid rgb(255, 255, 255);
+    color: #ffff;
+    font-size: 0.5rem;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: 0.3s ease all;
+}
+.bookcall button:hover{
+    border: 1px solid rgb(255, 255, 255);
+    color: #000818;
+    font-size: 0.5rem;
+    border-radius: 10px;
+    background-color: #ffff;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 1px 1px 10px white;
+}
+  }
