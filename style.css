@@ -55,7 +55,7 @@ nav{
     font-weight: 400;
     text-decoration: underline;
 }
-.bookcall button{
+.bookcall button {
     width: 8vw;
     padding: 10px;
     font-family: "Exo", sans-serif;
@@ -66,6 +66,18 @@ nav{
     border-radius: 10px;
     background-color: transparent;
     transition: 0.3s ease all;
+}
+button a{
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    color: #ffff;
+    font-size: 1vw;
+    text-decoration: none;
+}
+.bookcall button:hover a{
+    color: #000818;
+    font-weight: 700;
+    font-size: 1vw;
 }
 .bookcall button:hover{
     border: 1px solid rgb(255, 255, 255);
@@ -82,6 +94,13 @@ nav{
     justify-content: center;
     align-items: center;
     height: 80vh;
+    overflow: hidden;
+}
+.viewpage2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
     overflow: hidden;
 }
 .copy{
@@ -154,6 +173,7 @@ nav{
     flex-wrap: wrap;
     padding: 1rem;
     margin-bottom: 5rem;
+    overflow: hidden;
 }
 .box{
    background: linear-gradient(180deg, rgba(1,22,63,1) 0%, rgba(6,61,171,1) 100%);
@@ -166,6 +186,12 @@ nav{
    align-items: center;
    flex-direction: column;
    gap: 15px;
+   transition: all ease 0.4s;
+}
+.box:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    box-shadow: 1px 1px 20px rgba(55, 112, 226, 0.74);
 }
 .box img{
     width: 60%;
@@ -344,6 +370,13 @@ footer h3{
         background-color: transparent;
         transition: 0.3s ease all;
     }
+    button a{
+        font-family: "Exo", sans-serif;
+        font-weight: 400;
+        color: #ffff;
+        font-size: 1.5vw;
+        text-decoration: none;
+    }
     .bookcall button:hover{
         border: 1px solid rgb(255, 255, 255);
         color: #000818;
@@ -456,6 +489,13 @@ footer h3{
     border-radius: 10px;
     background-color: transparent;
     transition: 0.3s ease all;
+}
+button a{
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    color: #ffff;
+    font-size: 2vw;
+    text-decoration: none;
 }
 .bookcall button:hover{
     border: 1px solid rgb(255, 255, 255);
